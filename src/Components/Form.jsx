@@ -3,6 +3,8 @@
 import { useState } from "react";
 
 import styles from "./Form.module.css";
+import Button from "./Button";
+import { useNavigate } from "react-router-dom";
 
 export function convertToEmoji(countryCode) {
   const codePoints = countryCode
@@ -13,6 +15,7 @@ export function convertToEmoji(countryCode) {
 }
 
 function Form() {
+  const navigate = useNavigate();
   const [cityName, setCityName] = useState("");
   const [country, setCountry] = useState("");
   const [date, setDate] = useState(new Date());
@@ -49,11 +52,21 @@ function Form() {
       </div>
 
       <div className={styles.buttons}>
-        <button>Add</button>
-        <button>&larr; Back</button>
+        <Button type="primary">ADD</Button>
+        <Button
+          type="back"
+          onClick={(e) => {
+            e.preventDefault();
+            navigate(-1);
+          }}
+        >
+          &larr; BACK
+        </Button>
       </div>
     </form>
   );
 }
 
 export default Form;
+// by clickng on the back buttom we want to go back how we will we do that using navigator and definnin some steps s
+// just pass -1 to navigation
