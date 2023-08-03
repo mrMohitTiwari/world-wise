@@ -1,4 +1,4 @@
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styles from "./Map.module.css";
 import { useGeolocation } from "../hooks/useGeoLocation";
 import {
@@ -12,13 +12,12 @@ import {
 import { useEffect, useState } from "react";
 import { useCities } from "../Contexts/CitiesContext";
 import Button from "./Button";
+import { useUrlPosition } from "../hooks/useUrlPosition";
 function Map() {
   // making use of navigate hook which will jelp in clicking on the app
   const { cities } = useCities();
   const [mapPosition, setMapPosition] = useState([40, 0]);
-  const [searchParams] = useSearchParams();
-  const mapLat = searchParams.get("lat");
-  const mapLng = searchParams.get("lng");
+  const [mapLat, mapLng] = useUrlPosition();
   const {
     isLoading: isLoadingPosition,
     position: geolocationPosition,
@@ -31,11 +30,14 @@ function Map() {
     },
     [mapLat, mapLng]
   );
+  console.log(isLoadingPosition);
   return (
     <div className={styles.mapContainer} onClick={() => {}}>
-      <Button type={"position"} onClick={getPosition}>
-        {isLoadingPosition ? "loading..." : "use your position"}
-      </Button>
+      {!geolocationPosition && (
+        <Button type={"position"} onClick={getPosition}>
+          {isLoadingPosition ? "loading..." : "use your position"}
+        </Button>
+      )}
       <MapContainer
         className={styles.map}
         // center={mapPosition}
