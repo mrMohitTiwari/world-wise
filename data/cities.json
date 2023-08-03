@@ -35,6 +35,222 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
+    },
+    {
+      "cityName": "Chelva",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-08-03T17:18:29.596Z",
+      "notes": "",
+      "position": {
+        "lat": "39.759643031601314",
+        "lng": "-0.968408659586897"
+      },
+      "id": 98443198
+    },
+    {
+      "cityName": "Paterna",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-08-03T17:52:38.428Z",
+      "notes": "",
+      "position": {
+        "lat": "39.53970326072862",
+        "lng": "-0.44196482264790676"
+      },
+      "id": 98443199
+    },
+    {
+      "cityName": "Gurrea de Gallego",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-08-03T17:52:38.428Z",
+      "notes": "",
+      "position": {
+        "lat": "41.96857127883794",
+        "lng": "-0.7271258185218477"
+      },
+      "id": 98443200
+    },
+    {
+      "cityName": "La Berthenoux",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-08-03T17:52:38.428Z",
+      "notes": "",
+      "position": {
+        "lat": "46.69479534355741",
+        "lng": "2.083493766126763"
+      },
+      "id": 98443201
+    },
+    {
+      "cityName": "Merens-les-Vals",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-08-03T17:58:11.166Z",
+      "notes": "",
+      "position": {
+        "lat": "42.58687755455415",
+        "lng": "1.8199830695854626"
+      },
+      "id": 98443202
+    },
+    {
+      "cityName": "Merens-les-Vals",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-08-03T17:58:11.166Z",
+      "notes": "",
+      "position": {
+        "lat": "42.58687755455415",
+        "lng": "1.8199830695854626"
+      },
+      "id": 98443203
+    },
+    {
+      "cityName": "Chavaniac-Lafayette",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-08-03T17:58:11.166Z",
+      "notes": "",
+      "position": {
+        "lat": "45.1533852822975",
+        "lng": "3.598008694328088"
+      },
+      "id": 98443204
+    },
+    {
+      "cityName": "Chavaniac-Lafayette",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-08-03T18:01:09.398Z",
+      "notes": "",
+      "position": {
+        "lat": "45.1533852822975",
+        "lng": "3.598008694328088"
+      },
+      "id": 98443205
+    },
+    {
+      "cityName": "Marcheseuil",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-08-03T18:01:09.398Z",
+      "notes": "",
+      "position": {
+        "lat": "47.13085335780661",
+        "lng": "4.369885717643394"
+      },
+      "id": 98443206
+    },
+    {
+      "cityName": "Godziszow",
+      "country": "Poland",
+      "emoji": "🇵🇱",
+      "date": "2023-08-03T18:03:05.307Z",
+      "notes": "",
+      "position": {
+        "lat": "50.79767712766619",
+        "lng": "22.46862714933278"
+      },
+      "id": 98443207
+    },
+    {
+      "cityName": "Godziszow",
+      "country": "Poland",
+      "emoji": "🇵🇱",
+      "date": "2023-08-03T18:04:02.594Z",
+      "notes": "",
+      "position": {
+        "lat": "50.79767712766619",
+        "lng": "22.46862714933278"
+      },
+      "id": 98443208
+    },
+    {
+      "cityName": "Celestynow",
+      "country": "Poland",
+      "emoji": "🇵🇱",
+      "date": "2023-08-03T18:04:42.370Z",
+      "notes": "",
+      "position": {
+        "lat": "52.03995670153273",
+        "lng": "21.399822560604214"
+      },
+      "id": 98443209
+    },
+    {
+      "cityName": "Celestynow",
+      "country": "Poland",
+      "emoji": "🇵🇱",
+      "date": "2023-08-03T18:05:40.622Z",
+      "notes": "",
+      "position": {
+        "lat": "52.03995670153273",
+        "lng": "21.399822560604214"
+      },
+      "id": 98443210
+    },
+    {
+      "cityName": "Jarocin",
+      "country": "Poland",
+      "emoji": "🇵🇱",
+      "date": "2023-08-03T18:05:40.622Z",
+      "notes": "",
+      "position": {
+        "lat": "50.57074795414787",
+        "lng": "22.27819154907527"
+      },
+      "id": 98443211
+    },
+    {
+      "cityName": "Godziszow",
+      "country": "Poland",
+      "emoji": "🇵🇱",
+      "date": "2023-08-03T18:05:40.622Z",
+      "notes": "",
+      "position": {
+        "lat": "50.79767712766619",
+        "lng": "22.46862714933278"
+      },
+      "id": 98443212
+    },
+    {
+      "cityName": "Schmalkalden",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2023-08-03T18:05:40.622Z",
+      "notes": "",
+      "position": {
+        "lat": "50.72401981250062",
+        "lng": "10.304302731265414"
+      },
+      "id": 98443213
+    },
+    {
+      "cityName": "Raguhn-Jeßnitz",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2023-08-03T18:05:40.622Z",
+      "notes": "",
+      "position": {
+        "lat": "51.71527898671393",
+        "lng": "12.215265679642453"
+      },
+      "id": 98443214
+    },
+    {
+      "cityName": "Gera",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2023-08-03T18:06:56.364Z",
+      "notes": "",
+      "position": {
+        "lat": "50.863089453741715",
+        "lng": "12.060879529748824"
+      },
+      "id": 98443215
     }
   ]
 }

@@ -12,6 +12,7 @@ import Spinner from "../Components/Spinner";
 import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
+import { useCities } from "../Contexts/CitiesContext";
 const BASE_URL = "https://api.bigdatacloud.net/data/reverse-geocode-client?";
 export function convertToEmoji(countryCode) {
   const codePoints = countryCode
@@ -31,6 +32,7 @@ function Form() {
   const [lat, lng] = useUrlPosition();
   const [emoji, setemoji] = useState("");
   const [geoCodingError, setGeoCodingError] = useState("");
+  const { createCity, isLoading } = useCities();
   // console.log(cityName);
   // fetching the reverse geocoding using use effect so it can load on mount
   useEffect(
@@ -65,7 +67,7 @@ function Form() {
     },
     [lat, lng]
   );
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     if (!cityName || !date) return;
     const newCity = {
@@ -76,7 +78,10 @@ function Form() {
       notes,
       position: { lat, lng },
     };
-    console.log(newCity);
+    // console.log(newCity);
+    await createCity(newCity);
+    // navigating back to cities list using navigators
+    navigate("/app/cities");
   }
   if (!lat && !lng)
     return <Message message={"start by clicking somewhere on the app"} />;
@@ -84,7 +89,10 @@ function Form() {
 
   if (geoCodingError) return <Message message={geoCodingError} />;
   return (
-    <form className={styles.form} onSubmit={handleSubmit}>
+    <form
+      className={`${styles.form} ${isLoading ? styles.loading : ""}`}
+      onSubmit={handleSubmit}
+    >
       <div className={styles.row}>
         <label htmlFor="cityName">City name</label>
         <input
