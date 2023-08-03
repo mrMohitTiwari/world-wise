@@ -31,6 +31,9 @@ function City() {
   //   date: "2027-10-31T15:59:59.138Z",
   //   notes: "My favorite city so far!",
   // };
+
+  console.log(isLoading);
+
   const { cityName, emoji, date, notes } = currentCity;
   if (isLoading) <Spinner />;
   return (
