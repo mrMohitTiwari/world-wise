@@ -1,6 +1,4 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import { useEffect, useState } from "react";
-import HomePage from "./Pages/HomePage";
 import Product from "./Pages/Product";
 import Pricing from "./Pages/Pricing";
 import PageNotFound from "./Pages/PageNotFound";
@@ -13,6 +11,7 @@ import Form from "./Components/Form";
 import { CitiesProvider } from "./Contexts/CitiesContext";
 import { AuthProvider } from "./Contexts/FakeAuthContext";
 import ProtectedRoute from "./Pages/ProtectedRoute";
+import Homepage from "./Pages/Homepage";
 // const BASE_URL = "http://localhost:8000/cities";
 function App() {
   return (
@@ -20,7 +19,7 @@ function App() {
       <CitiesProvider>
         <BrowserRouter>
           <Routes>
-            <Route index element={<HomePage />} />
+            <Route index element={<Homepage />} />
 
             <Route path="product" element={<Product />} />
             <Route path="pricing" element={<Pricing />} />
