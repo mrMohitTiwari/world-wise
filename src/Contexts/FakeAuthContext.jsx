@@ -35,7 +35,7 @@ function AuthProvider({ children }) {
     dispatch({ type: "logout" });
   }
   return (
-    <AuthContext.Provider value={(user, isAuthenticated, login, logout)}>
+    <AuthContext.Provider value={{ user, isAuthenticated, login, logout }}>
       {children}
     </AuthContext.Provider>
   );
@@ -45,6 +45,6 @@ function useAuth() {
   const context = useContext(AuthContext);
   if (context === undefined)
     throw new Error("Accesing the provider outside the scope    ");
-  return useAuth;
+  return context;
 }
 export { useAuth, AuthProvider };
