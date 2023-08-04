@@ -1,6 +1,6 @@
 # WorldWise App - README
 
-go to the website :-https://world-wise-mrmohittiwari.vercel.app/
+go to the website :-https://world-wise-three.vercel.app/
 
 ## Table of Contents
 
