@@ -1,18 +1,6 @@
 {
   "cities": [
     {
-      "cityName": "Abrantes",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2023-08-04T03:31:04.118Z",
-      "notes": "always going to remember this one\n",
-      "position": {
-        "lat": "39.607665698027745",
-        "lng": "-8.195800781250002"
-      },
-      "id": 2
-    },
-    {
       "cityName": "Boltana",
       "country": "Spain",
       "emoji": "🇪🇸",
@@ -35,6 +23,18 @@
         "lng": "-1.0562321268957686"
       },
       "id": 4
+    },
+    {
+      "cityName": "Fuentelahiguera de Albatages",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-08-04T10:55:54.526Z",
+      "notes": "",
+      "position": {
+        "lat": "40.78197007557187",
+        "lng": "-3.2958984375000004"
+      },
+      "id": 5
     }
   ]
 }

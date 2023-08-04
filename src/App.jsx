@@ -12,6 +12,7 @@ import City from "./Components/City";
 import Form from "./Components/Form";
 import { CitiesProvider } from "./Contexts/CitiesContext";
 import { AuthProvider } from "./Contexts/FakeAuthContext";
+import ProtectedRoute from "./Pages/ProtectedRoute";
 // const BASE_URL = "http://localhost:8000/cities";
 function App() {
   return (
@@ -25,7 +26,15 @@ function App() {
             <Route path="pricing" element={<Pricing />} />
             {/* <Route path="app" element={<AppLayout />} /> */}
             {/* adding the nested routes  */}
-            <Route path="app" element={<AppLayout />}>
+            <Route
+              path="app"
+              element={
+                <ProtectedRoute>
+                  {" "}
+                  <AppLayout />
+                </ProtectedRoute>
+              }
+            >
               <Route index element={<Navigate replace to="cities" />} />
               <Route path="cities" element={<CityList />} />
               <Route path="cities/:id" element={<City />} />

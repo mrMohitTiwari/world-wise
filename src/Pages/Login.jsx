@@ -9,18 +9,18 @@ export default function Login() {
   const [email, setEmail] = useState("jack@example.com");
   const [password, setPassword] = useState("qwerty");
   const { isAuthenticated, login } = useAuth();
-  console.log(login);
+  // console.log(login);
   const navigate = useNavigate();
   useEffect(
     function () {
-      console.log(isAuthenticated);
+      // console.log(isAuthenticated);
       if (isAuthenticated) navigate("/app", { replace: true });
     },
     [isAuthenticated, navigate]
   );
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(email, password);
+    // console.log(email, password);
     if (email && password) login(email, password);
   }
   return (

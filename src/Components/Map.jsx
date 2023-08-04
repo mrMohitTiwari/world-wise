@@ -23,14 +23,14 @@ function Map() {
     position: geolocationPosition,
     getPosition,
   } = useGeolocation();
-  console.log(mapLat, mapLng);
+  // console.log(mapLat, mapLng);
   useEffect(
     function () {
       if (mapLat && mapLng) setMapPosition([mapLat, mapLng]);
     },
     [mapLat, mapLng]
   );
-  console.log(isLoadingPosition);
+  // console.log(isLoadingPosition);
   return (
     <div className={styles.mapContainer} onClick={() => {}}>
       {!geolocationPosition && (
