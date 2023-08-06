@@ -59,6 +59,18 @@
         "lng": "-6.723632812500001"
       },
       "id": 8
+    },
+    {
+      "cityName": "Alins",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-08-05T10:08:14.334Z",
+      "notes": "i enjoyed there a lot\n",
+      "position": {
+        "lat": "42.60246400014976",
+        "lng": "1.40625"
+      },
+      "id": 9
     }
   ]
 }

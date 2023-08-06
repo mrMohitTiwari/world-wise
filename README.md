@@ -32,6 +32,8 @@ go to the website :-https://world-wise-three.vercel.app/
 - HTML5
 - CSS3
 - JavaScript (ES6)
+  -Custom hooks
+  -Custom Provider
 
 ## Fake JSON Server
 
